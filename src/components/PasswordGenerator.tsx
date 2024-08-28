@@ -1,6 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useCallback, useContext, useEffect, useRef, useState } from "react"
+import ThemeContext from "../context/ThemeContext"
 
 const PasswordGenerator = () => {
+
+    const {theme} = useContext(ThemeContext);
 
     const [password, setPassword] = useState("")
     const [length, setLength] = useState(8)
@@ -35,7 +38,7 @@ const PasswordGenerator = () => {
     }, [length, numInclude, charInclude, passwordGenerator])
 
     return (
-        <div className="flex flex-wrap flex-col justify-center items-center my-32">
+        <div className={`h-[calc(100vh-80px)] flex flex-wrap flex-col justify-center items-center ${theme === "dark" ? "bg-gray-900" : "bg-white"}`}>
             <div className="flex flex-wrap flex-col justify-center items-center bg-violet-500 p-10 rounded-xl gap-10">
                 <h1 className="text-5xl text-white">Password Generator</h1>
                 <div className="flex bg-white rounded-lg p-1 w-full">

@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 const BgColorChanger = () => {
 
-    let [color, setColor] = useState("white")
+    let [color, setColor] = useState("black")
 
     return (
-        <div className={`h-screen flex felx-wrap items-center justify-between flex-col px-5 py-12 bg-${color}`}>
+        <div className={`h-[calc(100vh-80px)] flex felx-wrap items-center justify-between flex-col px-5 py-12 bg-${color}`}>
             <h1 className={`text-5xl font-bold ${color === "black" ? "text-white" : "text-gray800"}`}>Background Colour Changer</h1>
             <div className="flex flex-wrap bg-white items-center justify-center rounded-lg gap-5 p-5">
                 <button className="p-5 text-white bg-red-600 rounded-xl"
