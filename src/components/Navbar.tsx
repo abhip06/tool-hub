@@ -56,14 +56,14 @@ const Navbar = () => {
           className="flex justify-center items-center p-2 rounded-md text-sm text-white bg-gray-500 border-2 hover:bg-white hover:text-gray-800">
           {theme === "dark" ? "Light" : "Dark"}
         </button>
-        <button
+        {/* <button
           className="flex justify-center items-center px-3 py-2 rounded-lg text-sm text-white bg-violet-500 border-2 hover:border-violet-800 hover:bg-white hover:text-violet-800">
           Sign In
         </button>
         <button
           className="flex justify-center items-center px-3 py-2 rounded-lg text-sm text-violet-500 border-2 border-violet-500 hover:bg-violet-500 hover:text-white">
           Sign Up
-        </button>
+        </button> */}
       </div>
     </div>
   )
