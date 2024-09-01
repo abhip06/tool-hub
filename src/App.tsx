@@ -8,6 +8,7 @@ import BasicCounter from "./components/BasicCounter"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Profile from "./pages/Profile"
+import Calculator from "./components/Calculator"
 
 function App() {
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
           <Route path="password-generator" element={<PasswordGenerator />} />
           <Route path="bg-changer" element={<BgColorChanger />} />
           <Route path="basic-counter" element={<BasicCounter />} />
+          <Route path="calculator" element={<Calculator />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="profile" element={<Profile />} />
