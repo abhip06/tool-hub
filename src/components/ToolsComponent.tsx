@@ -5,7 +5,7 @@ import ThemeContext from "../context/ThemeContext";
 
 const ToolsComponent = () => {
     const navigate = useNavigate();
-    const {theme} = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
     return (
         <div className={`flex px-16 py-20 items-center flex-col gap-10 ${theme === "dark" ? "bg-gray-900" : "bg-white"}`}>
@@ -27,6 +27,7 @@ const ToolsComponent = () => {
                     <span className="text-lg">Basic Counter</span>
                 </div>
                 <div
+                    onClick={() => navigate("calculator")}
                     className="flex p-10 border-2 text-violet-500 border-violet-500 rounded-lg justify-center items-center cursor-pointer hover:bg-violet-500 hover:text-white w-[300px] h-[100px]">
                     <span className="text-lg">Calculator</span>
                 </div>
