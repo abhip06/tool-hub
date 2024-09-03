@@ -1,6 +1,5 @@
 import { useContext } from "react"
 import bgImg from "../assets/avatar-img.jpg"
-import Card from "../components/Card"
 import ToolsComponent from "../components/ToolsComponent"
 import ThemeContext from "../context/ThemeContext"
 
@@ -20,10 +19,6 @@ const Home = () => {
                     <img src={bgImg} alt="hero img" width={700} height={700} />
                 </div>
             </div>
-            <hr />
-            {/* <div className="flex flex-wrap justify-center w-full gap-5 px-16 py-10">
-                <Card />
-            </div> */}
             <ToolsComponent />
         </>
     )
