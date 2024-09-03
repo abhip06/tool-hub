@@ -4,7 +4,7 @@ import ToolsComponent from "../components/ToolsComponent"
 const Tools = () => {
 
     return (
-        <div className="min-h-screen py-10">
+        <div className="min-h-screen">
             <ToolsComponent />
         </div>
     )
